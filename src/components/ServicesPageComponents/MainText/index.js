@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { ElementBox, ElementContainer, ElementParagraph} from "./MainTextElements"
-import Image from "./../Image"
+
 
 
 const MainText = () => {
