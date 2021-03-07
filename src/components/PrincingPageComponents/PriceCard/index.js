@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Image from './../../Image';
+import { Price } from './../CardsContainer/ContainerElements'
 
 const useStyles = makeStyles({
     root: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function PriceCard() {
+export default function PriceCard(props) {
     const classes = useStyles();
 
     return (
@@ -34,16 +35,34 @@ export default function PriceCard() {
                 </div>
                 <CardContent style={{ textAlign: "center" }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        {props.title}
                     </Typography>
                 </CardContent>
 
                 <CardContent style={{ textAlign: "center" }}>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                    <Price variant="body2" component="h3">
+                        {props.firstPrice}€
+                    </Price>
+                    <Typography variant="body2" component="p" >
+                        (Sesión de 1 hora)
                     </Typography>
                 </CardContent>
+                <CardContent style={{ textAlign: "center" }}>
+                    <Price variant="body2" component="h3">
+                        {props.secondPrice}€
+                    </Price>
+                    <Typography variant="body2" component="p" >
+                        (Sesión de 1 hora)
+                    </Typography>
+                </CardContent>
+                {props.thirdPrice && <CardContent style={{ textAlign: "center" }}>
+                    <Price variant="body2" component="h3">
+                        {props.thirdPrice}€
+                    </Price>
+                    <Typography variant="body2" component="p" >
+                        (Sesión de 1 hora)
+                    </Typography>
+                </CardContent>}
             </CardActionArea>
         </Card>
     );
