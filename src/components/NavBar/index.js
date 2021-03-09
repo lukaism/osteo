@@ -41,7 +41,7 @@ const NavBar = () => {
                     <NavbarContainer>
                         <NavLogo to="/" onClick={closeMobileMenu}>
                             <NavIcon />
-              EXPLOR
+              NOMAD FISIOTERAPIA
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}

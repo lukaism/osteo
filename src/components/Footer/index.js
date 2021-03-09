@@ -24,9 +24,9 @@ const Footer = () => {
                 <SocialMediaWrap>
                     <SocialLogo to="/">
                         <SocialIcon />
-            EXPLOR
+            NOMAD FISIOTERAPIA
           </SocialLogo>
-                    <WebsiteRights>EXPLOR © {new Date().getFullYear()}</WebsiteRights>
+                    <WebsiteRights>NOMAD FISIOTERAPIA © {new Date().getFullYear()}</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                             <FaFacebook />
