@@ -8,6 +8,12 @@ width: 100%;
 `
 
 export const CategoryTitle = styled.h3`
-color:red;
+font-family: arial;
 text-align: center
+`
+
+export const Price = styled.h3`
+font-family: arial;
+text-align: center;
+font-size: 2rem;
 `
